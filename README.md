@@ -1,4 +1,4 @@
-# 🛍️ Catálogo de Productos E-Commerce - Prueba Técnica Frontend
+#  Catálogo de Productos E-Commerce - Prueba Técnica Frontend
 
 [![React](https://img.shields.io/badge/React-19.x-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-8.x-646cff?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
@@ -12,7 +12,7 @@ El proyecto implementa renderizado dinámico de componentes modulares, búsqueda
 
 ---
 
-## 📑 Tabla de Contenidos
+##  Tabla de Contenidos
 
 - [Características Principales](#-características-principales)
 - [Arquitectura y Decisiones Técnicas](#-arquitectura-y-decisiones-técnicas)
@@ -25,7 +25,7 @@ El proyecto implementa renderizado dinámico de componentes modulares, búsqueda
 
 ---
 
-## ✨ Características Principales
+##  Características Principales
 
 ### 1. Consumo Dinámico de API REST
 - Integración asíncrona directa con la API de [DummyJSON Products](https://dummyjson.com/products).
@@ -35,7 +35,7 @@ El proyecto implementa renderizado dinámico de componentes modulares, búsqueda
   - **Manejo de Errores (*Error Handling*)**: Mensajes amigables con botón de reintento (*Retry*).
   - **Estado Vacío (*Empty State*)**: Ilustración y botón de restablecimiento cuando ningún resultado coincide.
 
-### 2. Componente de Producto Robusto (`ProductCard`)
+### 2. Componente de Producto(`ProductCard`)
 Diseñado para renderizar la totalidad de atributos del modelo de producto:
 - **Identificación & Clasificación**: Marca (*Brand*), Categoría (*Category*), Código SKU y etiquetas (*Tags*).
 - **Galería Interactiva**: Selector dinámico de imágenes/miniaturas con vista ampliada y etiquetas de descuento (*Ribbon*).
@@ -82,7 +82,7 @@ Diseñado para renderizar la totalidad de atributos del modelo de producto:
 
 ---
 
-## 🛠️ Arquitectura y Decisiones Técnicas
+##  Arquitectura y Decisiones Técnicas
 
 | Decisión | Justificación |
 | :--- | :--- |
@@ -94,22 +94,22 @@ Diseñado para renderizar la totalidad de atributos del modelo de producto:
 
 ---
 
-## 📋 Requisitos Previos
+##  Requisitos Previos
 
 Asegúrate de contar con el siguiente entorno antes de ejecutar el proyecto:
 
 - **Node.js**: Versión `18.x` o superior (Recomendado: LTS `20.x` o `22.x`).
-- **Gestor de Paquetes**: `npm` (incluido con Node) o `pnpm`.
+- **Gestor de Paquetes**: `pnpm`.
 
 Comprueba tus versiones instaladas:
 ```bash
 node -v
-npm -v
+pnpm -v
 ```
 
 ---
 
-## 🚀 Instalación y Puesta en Marcha
+##  Instalación y Puesta en Marcha
 
 Sigue estos sencillos pasos para clonar y ejecutar el proyecto localmente:
 
@@ -122,34 +122,34 @@ cd Examen
 ### 2. Instalar Dependencias
 Instala los paquetes necesarios definidos en `package.json`:
 ```bash
-npm install
+pnpm install
 ```
 *(O si utilizas pnpm: `pnpm install`)*
 
 ### 3. Iniciar el Servidor de Desarrollo
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 El servidor Vite arrancará inmediatamente. Abre en tu navegador la URL que se muestra en la terminal (usualmente):
-👉 **`http://localhost:5173/`**
+ **`http://localhost:5173/`**
 
 ---
 
-## 📦 Comandos Disponibles
+##  Comandos Disponibles
 
 En el directorio del proyecto puedes ejecutar los siguientes scripts:
 
 | Comando | Acción |
 | :--- | :--- |
-| `npm run dev` | Inicia el servidor de desarrollo local con Hot Module Replacement (HMR). |
-| `npm run build` | Compila y optimiza la aplicación para producción en el directorio `/dist`. |
-| `npm run preview` | Previsualiza localmente el paquete generado para producción. |
-| `npm run lint` | Ejecuta ESLint para validar sintaxis, reglas de React y estándares de código limpio. |
+| `pnpm run dev` | Inicia el servidor de desarrollo local con Hot Module Replacement (HMR). |
+| `pnpm run build` | Compila y optimiza la aplicación para producción en el directorio `/dist`. |
+| `pnpm run preview` | Previsualiza localmente el paquete generado para producción. |
+| `pnpm run lint` | Ejecuta ESLint para validar sintaxis, reglas de React y estándares de código limpio. |
 
 ---
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```text
 Examen/
@@ -176,7 +176,7 @@ Examen/
 
 ---
 
-## 🔍 Detalle de Componentes y Servicios
+##  Detalle de Componentes y Servicios
 
 ### 1. `src/services/DumpyService.jsx`
 Centraliza la comunicación HTTP hacia la API de DummyJSON:
@@ -199,9 +199,9 @@ Orquestador de la aplicación:
 
 ---
 
-## 🌟 Puntos Fuertes Destacados para la Evaluación
+##  Puntos Fuertes Destacados para la Evaluación
 
-1. **Código Limpio y Libre de Errores**: Verificado con `npm run lint` y `npm run build` con **0 errores y 0 advertencias**.
+1. **Código Limpio y Libre de Errores**: Verificado con `pnpm lint` y `pnpm build` con **0 errores y 0 advertencias**.
 2. **Cumplimiento de Reglas Modernas de React 19**: Eliminación de llamadas sincrónicas a `setState` dentro del cuerpo de los efectos (`react-hooks/set-state-in-effect`), adoptando patrones recomendados por el equipo de React.
 3. **Resiliencia ante Fallos**: Si la API externa experimenta intermitencia, se muestra un mensaje informativo y un botón de reintento manual que preserva la estabilidad de la interfaz.
 4. **Diseño Visual Profesional**: Uso de glassmorphism, sombras sutiles, microinteracciones, estados *hover* suaves y compatibilidad total con tema oscuro.
