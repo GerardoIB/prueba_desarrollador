@@ -115,8 +115,8 @@ Sigue estos sencillos pasos para clonar y ejecutar el proyecto localmente:
 
 ### 1. Clonar el Repositorio
 ```bash
-git clone <URL_DEL_REPOSITORIO>
-cd Examen
+git clone https://github.com/GerardoIB/prueba_desarrollador.git
+cd prueba_desarrollador
 ```
 
 ### 2. Instalar Dependencias
@@ -124,7 +124,7 @@ Instala los paquetes necesarios definidos en `package.json`:
 ```bash
 pnpm install
 ```
-*(O si utilizas pnpm: `pnpm install`)*
+
 
 ### 3. Iniciar el Servidor de Desarrollo
 ```bash
@@ -142,10 +142,10 @@ En el directorio del proyecto puedes ejecutar los siguientes scripts:
 
 | Comando | Acción |
 | :--- | :--- |
-| `pnpm run dev` | Inicia el servidor de desarrollo local con Hot Module Replacement (HMR). |
-| `pnpm run build` | Compila y optimiza la aplicación para producción en el directorio `/dist`. |
-| `pnpm run preview` | Previsualiza localmente el paquete generado para producción. |
-| `pnpm run lint` | Ejecuta ESLint para validar sintaxis, reglas de React y estándares de código limpio. |
+| `pnpm dev` | Inicia el servidor de desarrollo local con Hot Module Replacement (HMR). |
+| `pnpm build` | Compila y optimiza la aplicación para producción en el directorio `/dist`. |
+| `pnpm preview` | Previsualiza localmente el paquete generado para producción. |
+| `pnpm lint` | Ejecuta ESLint para validar sintaxis, reglas de React y estándares de código limpio. |
 
 ---
 
